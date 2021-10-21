@@ -1,0 +1,5 @@
+[09-Feb-2016 17:18:10 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/revistg4/public_html/neza/app/panel/hmedia/configuracion.php on line 15
+[09-Feb-2016 17:18:52 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/revistg4/public_html/neza/app/panel/hmedia/configuracion.php on line 15
+[09-Feb-2016 17:18:55 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/revistg4/public_html/neza/app/panel/hmedia/configuracion.php on line 15
+[09-Feb-2016 17:21:46 America/Denver] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/revistg4/public_html/neza/app/panel/validar_usuario.php on line 12
+[09-Feb-2016 17:21:53 America/Denver] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/revistg4/public_html/neza/app/panel/validar_usuario.php on line 12

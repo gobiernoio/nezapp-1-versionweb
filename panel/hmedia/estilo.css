@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+*{outline: 0;}
+html, body {
+height:100%;
+outline: 0;
+background: #0D0;
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+body {
+margin: 0px;
+}
+h3 {
+	margin: 45px 0px 0px 0px;
+	padding: 0px;
+	color: #FF0000;
+	}
+h6 {
+	margin: 0px;
+	padding: 0px;
+	color: #999999;
+	}
+#contenedor {
+background: #0D0 url(img/enmedio.jpg) center repeat-y;
+width: 1000px;
+min-height:100%;
+height: auto!important;
+height:100%;
+margin: 0px auto 0px auto;
+}
+#encabezado {
+background: url(img/arriba.jpg) no-repeat;
+width: 950px;
+padding: 0px 25px 0px 25px;
+}
+#principal {
+width: 920px;
+padding: 15px;
+margin: 0px auto;
+}
+.corte {clear: both;padding-top: 4em;}
+#pie {
+width: 950px;
+background: #FFF url(img/abajo.jpg) no-repeat;
+height: 50px;
+margin: -50px auto 0px auto;
+padding: 0px 25px 0px 25px;
+}
+/* - - -  - - -  - - - ENCABEZADO - - -  - - -  - - - */
+.titulo {
+background: url(img/logo.jpg) bottom no-repeat;
+width: 850px;
+height: 60px;
+padding: 60px 0px 0px 100px;
+font-weight: bold;
+font-size: 30px;
+}
+#menu ul{
+margin: 0px;
+padding: 0px;
+}
+#menu {
+height: 30px;
+background: url(img/gris.jpg) repeat-x;
+}
+#menu li {
+display: inline;
+list-style: none;
+}
+#menu li a{
+height: 25px;
+font-size: 14px;
+text-decoration: none;
+font-weight: bold;
+color: #666;
+padding: 5px 10px 0px 10px;
+float: left;
+}
+#menu li a:hover{
+background: url(img/verde.jpg) repeat-x;
+color: #FFF;
+}
+/* - - -  - - -  - - - PIE - - -  - - -  - - - */
+#pie .creditos{
+background: #CCC;
+height: 30px;
+}
+#pie .hmedia a{
+height: 27px;
+color: #666;
+font-weight: bold;
+padding: 3px 10px 0px 33px;
+background: url(img/hmedia30x30.png) left top no-repeat;
+display: block;
+float:right;
+text-decoration: none;
+}
+#pie .hmedia a:hover{
+color:#FFF;
+background: url(img/hmedia30x30.png) left -30px no-repeat;
+}
+/* - - -  - - -  - - - PRINCIPAL - - -  - - -  - - - */
+#principal h4 {
+color: #00CC00;
+margin: 0px;
+}
+#principal h5 {
+color: #666;
+font-size: 15px;
+margin: 0px;
+}
+/* - - -  - - -  - - - PRINCIPAL FORMULARIOS - - -  - - -  - - - */
+form {
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+color: #999;
+font-size: 14px;
+}
+input {
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+color: #999;
+font-size: 16px;
+border: #999 2px solid;
+padding: 3px 10px;
+margin-bottom: 10px;
+}
+select {
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+color: #999;
+font-size: 16px;
+border: #999 2px solid;
+padding: 5px;
+color: #666;
+margin-bottom: 10px;
+}
+textarea {
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+color: #999;
+font-size: 16px;
+border: #999 2px solid;
+padding: 5px;
+margin-bottom: 10px;
+}
+.bloque {
+background: #CCC;
+padding: 15px 15px 0px 15px;
+margin-bottom: 10px;
+overflow: hidden;
+}
+.bloque_checkbox label {
+background: #FFF;
+width: 70px;
+float: left;
+margin-right: 15px;
+margin-bottom: 15px;
+padding: 10px;
+border: #999 2px solid;
+text-align: center;
+}
+/* - - -  - - -  - - - Vanadium Styles - - -  - - -  - - - */ 
+div.vanadium-invalid {
+  border-color: red !important;
+  border-style: solid !important;
+}
+div.vanadium-valid {
+  border-color: green !important;
+  border-style: solid !important;
+}
+.vanadium-message-value {
+  font-style: italic;
+  text-decoration: underline;
+}
+.vanadium-advice.vanadium-invalid, .vanadium-advice.vanadium-invalid * {
+  color: red;
+  font-weight: bold;
+}
+input.vanadium-valid {
+  border-color: greenyellow;
+}
+input.vanadium-invalid {
+  border-color: red;
+}
+#messages {
+  height: 70px;
+  padding: 0;
+  border-color: yellow;
+}
+input.vanadium-valid ~ .vanadium-valid-advice {
+display: inline !important;
+color: green;
+}
+.boton_todos a{
+margin-right: 5px;
+border: #666 1px solid;
+float: right;
+background: #FFF;
+padding: 2px 10px;
+color: #333;
+text-decoration: none;
+}
+.boton_todos a:hover{
+color: #FFF;
+background: #0F3 url(img/verde.jpg);
+}
+/* - - -  - - -  - - - TABLAS - - -  - - -  - - - */
+table {
+margin-bottom: 20px;
+}
+table th {
+background: #0C0 url(img/verde.jpg) repeat-x 5px;
+color: #FFF;
+padding: 3px 7px 3px 7px;
+}
+table th a{
+color:#FFF;
+}
+table th a:hover{
+color: #FF0;
+}
+table td {
+padding: 0px;
+padding: 0px 5px;
+vertical-align: middle;
+}
+#thumb_in_table {
+width: 70px;
+height: 25px;
+overflow: hidden;
+}
+
+/*  - - -  - - -  - - - BOTONES SPRITE  - - -  - - -  - - -  */
+.modificar a, .publicar a, .bloquear a, .eliminar a {
+background:url(img/sprite.png);
+display:block; 
+height:32px;
+width:32px;
+text-indent:-9000%;
+}
+
+/*ESTADO NORMAL*/
+.modificar a{background-position:-32px -32px}
+.publicar a{background-position:0px -32px}
+.bloquear a{background-position:-64px -32px}
+.eliminar a{background-position:-96px -32px}
+
+/*ESTADO ROLLOVER*/
+.modificar a:hover{background-position:-32px 0px}
+.publicar a:hover{background-position:0px 0px}
+.bloquear a:hover{background-position:-64px 0px}
+.eliminar a:hover{background-position:-96px 0px}
+
+/* - - -  - - -  - - - LOGIN - - -  - - -  - - - */
+.cuadro_emergente {
+width: 400px;
+color: #999;
+border:  #999 2px solid;
+padding: 15px;
+margin: 100px auto;
+}
+
+/* - - -  - - -  - - - Galeria de fotos - - -  - - -  - - - */
+
+.fotos {
+width: 700px;
+margin: 0px auto 0px auto;
+}
+
+.foto {
+width: 180px;
+border: #999 2px solid;
+background: #FFF;
+padding: 10px;
+overflow: hidden;
+margin: 10px;
+float: left;
+}
+.fotos .foto img {
+border: #0099FF 2px solid;
+}

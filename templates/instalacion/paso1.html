@@ -1,0 +1,49 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Bienvenido a NezApp">
+  <ion-content class="padding">
+    
+      
+    <div ng-submit="crearUsuario()">
+      <form>
+        <div class="item item-body">
+
+          <p class="padding-bottom">
+            Para poder acceder a toda la interacción como es el chat entre otras cosas es necesario configurar tu aplicación. Sigue las instrucciones para poder comenzar.
+          </p>
+          
+          <p class="padding-bottom">
+            Debes saber que tu participación es completamente anónima y privada.  No debes colocar tu nombre completo, solamente un nombre de pila. Por ejemplo: Juan, Pedro, María, etc.
+          </p>
+
+          <p class="padding-bottom">
+            Solo toma en cuenta que este nombre aparecerá en tus mensajes de chat entre otras cosas y no podrá ser modificado.
+          </p>
+        
+          <label class="item item-input padding-top padding-bottom">
+            <i class="icon ion-person placeholder-icon"></i>
+            <input type="text" placeholder="Toca aquí para escribir tu nombre" ng-model="nombre" autocapitalize="off">
+          </label>
+
+          
+          <button class="button button-full button-energized" type="submit">
+            Siguiente
+          </button>
+
+          <p class="padding-bottom">
+            Aviso de privacidad: Tu nombre solo será almacenado en los chats que envíes y solo servirá para ese proposito. Ninguna otra información será obtenida ni almacenada con esta App.
+          </p>
+
+        </div>
+      </form>
+    </div>
+
+        
+        
+
+  </ion-content>
+</ion-view>

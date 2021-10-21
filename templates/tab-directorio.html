@@ -1,0 +1,23 @@
+<ion-view view-title="Directorio">
+  <ion-content>
+    
+
+    <ion-list>
+
+
+      <ion-item class="item item-icon-left" ng-repeat="telefono in telefonos" type="item-text-wrap" ng-href="tel:{{telefono.telefono}}">
+
+
+        <i class="icon ion-ios-telephone"></i>
+
+        <h2>{{telefono.nombre}}</h2>
+        {{telefono.telefono}}
+
+      </ion-item>
+
+
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>

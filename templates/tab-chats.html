@@ -1,0 +1,60 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      
+      <div class="item item-dark">
+        <h2 class="light">Tus chats recientes</h2>
+      </div>
+      
+
+      <ion-item class="item item-avatar item-remove-animate item-icon-right" ng-repeat="michat in mischats" type="item-text-wrap" href="#/tab/chats/{{michat.usuarioId}}/{{michat.usuario}}">
+        
+        <img ng-src="img/logoschat/usuario.png">
+        
+        <h2>{{ michat.usuario }}</h2>
+
+        <p>{{ michat.hora }} - {{ michat.ultimomensaje }}</p>
+        
+        <div ng-if="michat.badge >= 1">
+            <span class="badge badge-assertive"> {{michat.badge}} </span>
+        </div>
+        
+
+        <ion-option-button class="button-assertive" ng-click="remove( michat.usuarioId )">
+          Borrar
+        </ion-option-button>
+      </ion-item>
+
+
+    </ion-list>
+
+    
+
+    <div class="card card-dark padding">
+        Estimado vecino, el Gobierno municipal de Nezahualcóytl 
+        está para servirte, inicia un chat con cualquiera de las 
+        siguientes dependencias para atenderte.
+    </div>
+
+
+
+    <ion-list>
+      
+      <div class="item item-dark">
+        <h2 class="light">Inicia un nuevo chat</h2>
+      </div>
+
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}/{{chat.nombre}}">
+        <img ng-src="{{ chat.face }}">
+        <p>Chatea con: </p>
+        <h2>{{ chat.nombre }}</h2>
+        <!-- <p>{{ chat.ultimomensaje }}</p> -->
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        
+      </ion-item>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>

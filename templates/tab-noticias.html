@@ -1,0 +1,26 @@
+<ion-view view-title="Noticias">
+  <ion-content class="padding">
+
+    
+
+
+    <div ng-repeat="noticia in noticias">
+        <div class="list card">
+          <div class="item item-divider">{{noticia.titulo}}</div>
+          <div class="item item-divider item-dark right">{{noticia.fecha}}</div>
+    
+          <div class="item item-body">
+            <div>
+              <img src="{{noticia.imagen}}" alt="" class="full-image">
+              {{noticia.noticia}}
+
+              <a href="{{noticia.enlace}}" class="button button-full button-energized">Ver la noticia en la web</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+
+  </ion-content>
+</ion-view>

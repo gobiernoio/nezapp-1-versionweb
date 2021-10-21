@@ -1,0 +1,55 @@
+<ion-view view-title="Bienvenido a NezApp">
+  <ion-content class="padding">
+    
+      
+    <div>
+
+        <div class="item item-body" style="text-align: center" ng-show="listo">
+
+          <p class="padding-bottom">
+            ¡Y Listo, eso fue todo!, ¿creiste que tardaría más?
+          </p>
+          
+          <p class="padding-bottom">
+            El ID de tu App es:<br>
+            <h1 on-touch="golpeame()" ng-model="nodoid"> {{myID}} </h1>
+          </p>
+ 
+          <a href="#/tab/inicio" class="button button-full button-energized" type="submit">
+            Finalizar
+          </a>
+
+        </div>
+
+
+
+
+      
+        <div class="item item-body" style="text-align: center" ng-submit="cambiarId()" ng-show="puerta">
+          <form>
+                <p class="padding-bottom">
+                  ¡Has encontrado una puerta trasera!
+                </p>
+                
+                <p class="padding-bottom">
+                  Ahora puedes colocar una ID personalizada:<br>
+                </p>
+
+                <label class="item item-input padding-top padding-bottom">
+                  <i class="icon ion-person placeholder-icon"></i>
+                  <input type="text" placeholder="Colocar ID personalizada" ng-model="inputnuevaid" autocapitalize="off">
+                </label>
+       
+                <button href="" class="button button-full button-energized" type="submit">
+                  Cambiar ID
+                </button>
+          </form>
+        </div>
+      
+    </div>
+
+        
+        
+
+  </ion-content>
+</ion-view>
